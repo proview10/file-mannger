@@ -1,4 +1,4 @@
-public class File extends  Node{
+public class File extends Node {
     public long getSize() {
         return size;
     }
@@ -9,7 +9,9 @@ public class File extends  Node{
 
     long size;
 
-    public File(long size, Directory PDir) {
+    public File(long size, String name, String date, Directory pdir) {
+        super(name, date, pdir);
         this.size = size;
+
     }
 }
